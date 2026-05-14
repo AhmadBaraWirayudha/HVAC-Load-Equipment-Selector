@@ -1,6 +1,5 @@
 # HVAC Load & Equipment Selector
 
-An engineering-focused HVAC calculation and equipment screening tool for preliminary design, load estimation, and equipment selection.  
 This project is built to support mechanical engineers, MEP designers, and HVAC practitioners who need a structured way to estimate building cooling/heating requirements, size major HVAC components, and compare candidate equipment based on calculated design conditions.
 
 The tool is intended to reduce manual spreadsheet work and make HVAC design more reproducible, traceable, and easier to review. It consolidates core HVAC calculations into a single workflow, from thermal load estimation to equipment matching and selection logic.
