@@ -195,4 +195,8 @@ This repository is meant to serve as:
 
 ## Inspiration and Contribution
 
-This project was inspired in part by the workflow and implementation ideas from https://github.com/shahabsalehi/HVAC-Fault-Detection-with-Anomaly-Pipeline
+This project was inspired by the HVAC anomaly detection pipeline in [HVAC-Fault-Detection-with-Anomaly-Pipeline](https://github.com/shahabsalehi/HVAC-Fault-Detection-with-Anomaly-Pipeline).
+
+I used that project as a reference for how an HVAC workflow can be organized clearly from data to output. Its dashboard and pipeline structure helped shape how I wanted this repository to feel: practical, traceable, and engineering-focused.
+
+My contribution here is different. This repository is centered on HVAC load calculation and equipment selection, not fault detection. The goal is to support early design work by estimating loads, checking airflow needs, and comparing candidate equipment in one place.
