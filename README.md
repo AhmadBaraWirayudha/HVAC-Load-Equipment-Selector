@@ -1,33 +1,31 @@
 # HVAC Load & Equipment Selector
 
-This project is built to support mechanical engineers, MEP designers, and HVAC practitioners who need a structured way to estimate building cooling/heating requirements, size major HVAC components, and compare candidate equipment based on calculated design conditions.
-
-The tool is intended to reduce manual spreadsheet work and make HVAC design more reproducible, traceable, and easier to review. It consolidates core HVAC calculations into a single workflow, from thermal load estimation to equipment matching and selection logic.
+The purpose is to have a practical HVAC engineering tool for estimating building loads, checking airflow requirements, and screening equipment against calculated design conditions. Instead of spreading the work across disconnected spreadsheets and manual checks, this project keeps the calculation flow in one place.
 
 ---
 
 ## Project Purpose
 
-HVAC system sizing is often done using scattered spreadsheets, manual formulas, and disconnected vendor catalogs. That makes design review slow, inconsistent, and difficult to audit.
+HVAC sizing is often handled through scattered spreadsheets, hand calculations, and vendor catalogs that are not always easy to trace or compare. That makes review slower and creates room for inconsistency.
 
-This project addresses that problem by providing a calculation and selection framework that can:
+This project brings the main steps into a single workflow so the design process is easier to follow and verify. It is meant to:
 
-- estimate room or zone cooling/heating loads,
+- estimate room or zone cooling and heating loads,
 - determine supply air requirements,
 - evaluate airflow and capacity needs,
 - screen HVAC equipment candidates,
-- and generate a structured output for design comparison.
+- and produce a structured output for design comparison.
 
-The final goal is to create a practical engineering utility for early-stage HVAC design, equipment screening, and load-based selection.
+The goal is to make early-stage HVAC design more practical, reproducible, and easier to audit.
 
 ---
 
 ## Scope of Calculation
 
-This project is designed to support the main calculation blocks commonly used in HVAC design and equipment selection.
+The workbook and future dashboard are built around the calculation blocks that usually appear in HVAC design and equipment selection.
 
-### 1. Cooling Load Calculation
-The tool can handle the main contributors to cooling load, including:
+### Cooling Load Calculation
+The tool covers the main contributors to cooling load, including:
 
 - sensible heat gain,
 - latent heat gain,
@@ -40,16 +38,16 @@ The tool can handle the main contributors to cooling load, including:
 - occupancy load,
 - solar gain contribution.
 
-### 2. Heating Load Calculation
-The tool can also estimate heating demand using the major heat loss terms, such as:
+### Heating Load Calculation
+The tool can also estimate heating demand using the main heat loss terms, such as:
 
-- transmission loss through building envelope,
+- transmission loss through the building envelope,
 - infiltration heat loss,
 - ventilation heating load,
 - zone or room heating demand.
 
-### 3. Airflow Requirement Calculation
-The project supports airflow sizing based on the calculated load and design assumptions, including:
+### Airflow Requirement Calculation
+Airflow sizing is based on the calculated load and design assumptions, including:
 
 - supply air volume requirement,
 - return air estimation,
@@ -58,8 +56,8 @@ The project supports airflow sizing based on the calculated load and design assu
 - minimum airflow check,
 - airflow balance logic.
 
-### 4. Psychrometric and Airside Logic
-To support HVAC design decisions, the tool can be extended or configured to handle:
+### Psychrometric and Airside Logic
+The project can be extended to handle the air-side conditions commonly used in HVAC design, such as:
 
 - dry-bulb temperature,
 - wet-bulb temperature,
@@ -70,8 +68,8 @@ To support HVAC design decisions, the tool can be extended or configured to hand
 - supply air condition selection,
 - coil leaving air condition logic.
 
-### 5. Equipment Selection Logic
-The selector is intended to compare the load and airflow result against available HVAC equipment options such as:
+### Equipment Selection Logic
+The selector compares load and airflow results against common HVAC equipment options such as:
 
 - Air Handling Unit (AHU),
 - Fan Coil Unit (FCU),
@@ -86,7 +84,7 @@ The selector is intended to compare the load and airflow result against availabl
 - Fresh air unit / ventilation unit,
 - Outdoor air handling section.
 
-The equipment selection step checks whether the candidate unit can satisfy:
+The selection step checks whether the candidate equipment can satisfy:
 
 - total capacity,
 - sensible capacity,
@@ -100,7 +98,7 @@ The equipment selection step checks whether the candidate unit can satisfy:
 
 ## Engineering Inputs
 
-The tool is designed around practical HVAC design inputs such as:
+The tool is designed around the inputs that are normally available during HVAC design, such as:
 
 - room dimensions,
 - building area and volume,
@@ -121,7 +119,7 @@ The tool is designed around practical HVAC design inputs such as:
 
 ## Equipment Categories Covered
 
-The project is designed to work with the main HVAC system elements used in design and selection:
+The project is intended to work with the main HVAC system components used in design and selection:
 
 - AHU
 - FCU
@@ -144,7 +142,7 @@ The project is designed to work with the main HVAC system elements used in desig
 
 ## Expected Output
 
-The tool is intended to produce outputs such as:
+The tool is expected to produce outputs such as:
 
 - calculated cooling load,
 - calculated heating load,
@@ -159,7 +157,7 @@ The tool is intended to produce outputs such as:
 
 ## Project Goal
 
-The goal is not only to calculate loads, but also to create a reusable HVAC engineering workflow that can be used for:
+The goal is not only to calculate loads, but to build a reusable HVAC engineering workflow that can support:
 
 - concept design,
 - preliminary sizing,
@@ -167,7 +165,7 @@ The goal is not only to calculate loads, but also to create a reusable HVAC engi
 - design comparison,
 - and engineering documentation.
 
-This repository focuses on the logic behind HVAC selection, calculation transparency, and practical design use.
+This repository focuses on calculation transparency, equipment selection logic, and practical HVAC design use.
 
 ---
 
@@ -192,3 +190,9 @@ This repository is meant to serve as:
 - a design support tool,
 - a portfolio project for mechanical engineering,
 - and a foundation for a future interactive HVAC dashboard.
+
+---
+
+## Inspiration and Contribution
+
+This project was inspired in part by the workflow and implementation ideas from https://github.com/shahabsalehi/HVAC-Fault-Detection-with-Anomaly-Pipeline
